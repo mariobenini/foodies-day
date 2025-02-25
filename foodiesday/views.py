@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.conf import settings
 import google.generativeai as genai
 import markdown
 from django.utils.safestring import mark_safe
+import time
 
 
 def index(request):
@@ -34,3 +35,11 @@ def search_results(request):
     response = 'Please, select a city.'
   return render(request, 'foodiesday/search_results.html', {'response': response})
 
+
+def loading_page(request):
+    city = request.GET.get('city', '')
+
+    if not city:
+        return redirect('index')
+
+    return render(request, 'foodiesday/loading.html', {'city': city})
