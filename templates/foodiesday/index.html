@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FoodiesDay</title>
+  <title>Foodies Day</title>
   <script src="https://maps.googleapis.com/maps/api/js?key={{GOOGLE_PLACES_API_KEY}}&libraries=places&callback=initAutocomplete" async defer></script>
   <script src="{% static '/js/location_autocomplete.js' %}"></script>
 </head>
 <body>
-  <h1>Teste do Site</h1>
-  <input id="location-input" type="text" placeholder="Enter a location">
+  <h1>Foodies Day</h1>
+  <form method="GET" action="{% url 'search_results' %}">
+    <input id="location-input" type="text" name="city" placeholder="Enter a location" required>
+    <button id="search-btn" type="submit">Search</button>
+  </form>
   
 </body>
 </html>
