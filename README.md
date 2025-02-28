@@ -1,5 +1,6 @@
 # 🍽 Foodies Day
 ## Restaurant Finder & Travel Guide
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Google Gemini](https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white)
 
 ## 📌 About the Project
 This is a **Django-based web application** that helps users find the top one day travel guide based on the best restaurants in a selected city using the **Google Places API Autocomplete** and **GEMINI API**. The app generates a **one-day travel guide** for the selected city using an AI-powered response system (Gemini API).
